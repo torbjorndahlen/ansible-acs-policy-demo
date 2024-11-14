@@ -13,6 +13,11 @@ Create a new 'StackRox API integration' admin token in Red Hat Advanced Cluster 
 ![StackRox API token 2](/docs-images/stackrox-api-token-2.png)
 
 Update the Ansible `vault.yml` to reference your ACS cluster and the API token.
+
+```
+% ansible-vault edit vault.yml
+Password: 1800redhat
+```
 ```yaml
 vaulted_acs_host: central-acs-central.apps.cluster.example.com:443
 vaulted_acs_token: your-acs-admin-token
